@@ -1,0 +1,36 @@
+.trainers {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.548)), url('../src/img/bgc-gym3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem;
+
+  &-content {
+    @include container;
+  }
+
+  h2 {
+    text-align: center;
+    color: $color-light;
+  }
+}
+
+.trainer {
+  @include bgc--red;
+  margin: 4rem 0;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    display: block;
+    margin-right: 2rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  p {
+    color: #000;
+  }
+}

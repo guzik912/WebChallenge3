@@ -191,6 +191,94 @@
   margin: 2rem 0;
 }
 
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 400px;
+}
+
+.info-left {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+.info-right {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-right img {
+  display: block;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.trainers {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.514)), to(rgba(0, 0, 0, 0.548))), url("../src/img/bgc-gym3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.548)), url("../src/img/bgc-gym3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem;
+}
+
+.trainers-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.trainers h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.trainer {
+  background: rgba(155, 15, 15, 0.815);
+  color: #333;
+  margin: 4rem 0;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trainer img {
+  display: block;
+  margin-right: 2rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.trainer p {
+  color: #000;
+}
+
 .main-footer {
   background: #333;
   color: #fff;

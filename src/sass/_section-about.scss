@@ -1,0 +1,27 @@
+.about {
+  &-content {
+    @include container;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+  }
+}
+
+.info-left {
+  flex-basis: 40%;
+}
+
+.info-right {
+  flex-basis: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    display: block;
+    border-radius: 5px;
+    width: 80%;
+
+  }
+}
