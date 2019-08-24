@@ -1,0 +1,25 @@
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+@mixin bgc--dark {
+  background: $color-dark;
+  color: $color-light;
+}
+
+@mixin bgc--light {
+  background: $color-light;
+  color: $color-dark;
+}
+
+@mixin bgc--red {
+  background: rgba(155, 15, 15, 0.815);
+  color: $color-dark;
+}
+
+@mixin transition {
+  transition: .2s ease-out;
+}
