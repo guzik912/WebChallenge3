@@ -16,10 +16,14 @@
 }
 
 @mixin bgc--red {
-  background: rgba(155, 15, 15, 0.815);
+  background: $color-red;
   color: $color-dark;
 }
 
 @mixin transition {
   transition: .2s ease-out;
+}
+
+@mixin borderStyle {
+  border-radius: 0 20px 0 20px;
 }

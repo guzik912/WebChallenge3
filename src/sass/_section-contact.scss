@@ -1,0 +1,60 @@
+.contact-form {
+  @include bgc--light;
+  padding: 5rem;
+
+  .form-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .form {
+
+
+    &-group {
+      margin: 2rem 0;
+    }
+
+    label {
+      display: block;
+      margin-bottom: .5rem;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: .5rem;
+      color: #555;
+      border: 1px solid $color-light;
+      outline: none;
+    }
+
+    textarea {
+      height: 200px;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: rgba($color-red, .2);
+    }
+
+    ::placeholder {
+      color: $color-red;
+    }
+  }
+}
+
+.contact-info {
+  @include bgc--dark;
+  padding: 5rem;
+
+  .info-content {
+    @include container;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &>* {
+      text-align: center;
+    }
+  }
+}

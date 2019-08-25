@@ -1,4 +1,6 @@
 .about {
+  @include bgc--light;
+
   &-content {
     @include container;
     display: flex;
@@ -20,8 +22,7 @@
 
   img {
     display: block;
-    border-radius: 5px;
     width: 80%;
-
+    border-radius: 5px;
   }
 }

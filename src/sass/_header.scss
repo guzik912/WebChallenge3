@@ -1,3 +1,5 @@
+.header {}
+
 .logo {
   color: $color-red;
 }
@@ -38,7 +40,8 @@
 
 .showcase {
   background: url('../src/img/bgc-gym.jpg') no-repeat center center/cover;
-  height: 600px;
+  height: 500px;
+
 
   display: flex;
   align-items: center;

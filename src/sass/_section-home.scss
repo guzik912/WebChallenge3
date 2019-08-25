@@ -1,17 +1,26 @@
 .home {
   @include bgc--dark;
-  display: flex;
-  height: 400px;
+  margin: 5rem 0;
+
+
+  &-content {
+    @include container;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding: 5rem;
+  }
 
   &__img {
     background: url('../src/img/img-gym2.jpg') no-repeat center center/cover;
     filter: brightness(40%);
-    flex-basis: 50%;
+    flex-basis: 45%;
     height: auto;
+    border-radius: 3px;
   }
 
   &__info {
-    flex-basis: 50%;
+    flex-basis: 45%;
     padding: 0 3rem;
 
     display: flex;

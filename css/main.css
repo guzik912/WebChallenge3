@@ -20,11 +20,11 @@
 
 .btn--dark {
   background: #333;
-  color: #fff;
+  color: #eee;
 }
 
 .btn--light {
-  background: #fff;
+  background: #eee;
   color: #333;
 }
 
@@ -101,7 +101,7 @@
 
 .showcase {
   background: url("../src/img/bgc-gym.jpg") no-repeat center center/cover;
-  height: 600px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,7 +114,7 @@
 }
 
 .showcase-content {
-  color: #fff;
+  color: #eee;
   text-align: center;
 }
 
@@ -125,25 +125,38 @@
 
 .home {
   background: #333;
-  color: #fff;
+  color: #eee;
+  margin: 5rem 0;
+}
+
+.home-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 400px;
+  padding: 5rem;
 }
 
 .home__img {
   background: url("../src/img/img-gym2.jpg") no-repeat center center/cover;
   -webkit-filter: brightness(40%);
           filter: brightness(40%);
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
   height: auto;
+  border-radius: 3px;
 }
 
 .home__info {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
   padding: 0 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,30 +178,41 @@
 }
 
 .offer {
+  margin: 5rem 0;
+}
+
+.offer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .box {
-  padding: 20px;
+  border-radius: 0 20px 0 20px;
+  background: #eee;
+  color: #333;
+  margin: 0 2rem;
+  padding: 2rem;
   text-align: center;
 }
 
 .box:nth-child(2) {
-  background: rgba(155, 15, 15, 0.815);
+  background: #852c2c;
   color: #333;
 }
 
 .box span {
   display: block;
   margin: 2rem 0;
+}
+
+.about {
+  background: #eee;
+  color: #333;
 }
 
 .about-content {
@@ -229,8 +253,8 @@
 
 .info-right img {
   display: block;
-  border-radius: 5px;
   width: 80%;
+  border-radius: 5px;
 }
 
 .trainers {
@@ -251,12 +275,14 @@
 
 .trainers h2 {
   text-align: center;
-  color: #fff;
+  color: #eee;
 }
 
 .trainer {
-  background: rgba(155, 15, 15, 0.815);
+  background: #852c2c;
   color: #333;
+  border-radius: 0 20px 0 20px;
+  background: rgba(161, 156, 156, 0.1);
   margin: 4rem 0;
   padding: 1rem 2rem;
   display: -webkit-box;
@@ -279,10 +305,90 @@
   color: #000;
 }
 
+.contact-form {
+  background: #eee;
+  color: #333;
+  padding: 5rem;
+}
+
+.contact-form .form-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form .form-group {
+  margin: 2rem 0;
+}
+
+.contact-form .form label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.contact-form .form input,
+.contact-form .form textarea {
+  width: 100%;
+  padding: .5rem;
+  color: #555;
+  border: 1px solid #eee;
+  outline: none;
+}
+
+.contact-form .form textarea {
+  height: 200px;
+}
+
+.contact-form .form input:focus,
+.contact-form .form textarea:focus {
+  border-color: rgba(133, 44, 44, 0.2);
+}
+
+.contact-form .form ::-webkit-input-placeholder {
+  color: #852c2c;
+}
+
+.contact-form .form :-ms-input-placeholder {
+  color: #852c2c;
+}
+
+.contact-form .form ::-ms-input-placeholder {
+  color: #852c2c;
+}
+
+.contact-form .form ::placeholder {
+  color: #852c2c;
+}
+
+.contact-info {
+  background: #333;
+  color: #eee;
+  padding: 5rem;
+}
+
+.contact-info .info-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-info .info-content > * {
+  text-align: center;
+}
+
 .main-footer {
   background: #333;
-  color: #fff;
-  padding: .5rem 0;
+  color: #eee;
+  padding: 1rem 0;
   text-align: center;
   font-size: 1.4rem;
 }
@@ -302,11 +408,12 @@ body {
   font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.7em;
   font-size: 1.6rem;
+  background: #333;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #eee;
 }
 
 ul {

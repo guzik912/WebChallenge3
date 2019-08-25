@@ -1,11 +1,19 @@
 .offer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 5rem 0;
+
+  &-content {
+    @include container;
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
 }
 
 .box {
-  padding: 20px;
+  @include borderStyle;
+  @include bgc--light;
+  margin: 0 2rem;
+  padding: 2rem;
   text-align: center;
 
   &:nth-child(2) {
