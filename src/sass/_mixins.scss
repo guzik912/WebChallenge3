@@ -1,8 +1,8 @@
 @mixin container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 2rem;
   overflow: auto;
-  padding: 0 20px;
 }
 
 @mixin bgc--dark {
@@ -26,4 +26,35 @@
 
 @mixin borderStyle {
   border-radius: 0 20px 0 20px;
+}
+
+
+@mixin mqPhone {
+  @media only screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin mqTablet {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mqLaptop {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin mqWide {
+  @media only screen and (max-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin mqLand {
+  @media only screen and (max-height:500px) {
+    @content;
+  }
 }

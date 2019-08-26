@@ -7,11 +7,21 @@
     justify-content: center;
     align-items: center;
     height: 400px;
+
+    @include mqPhone {
+      flex-direction: column;
+      height: auto;
+    }
   }
 }
 
 .info-left {
   flex-basis: 40%;
+
+  @include mqPhone {
+    margin-top: 1rem;
+    padding: 1rem;
+  }
 }
 
 .info-right {
@@ -20,9 +30,33 @@
   justify-content: center;
   align-items: center;
 
+  @include mqTablet {
+    margin-left: 4rem;
+  }
+
+  @include mqPhone {
+    margin: 3rem 0;
+  }
+
+  @include mqLand {
+    margin-left: 4rem;
+  }
+
   img {
     display: block;
     width: 80%;
     border-radius: 5px;
+
+    @include mqTablet {
+      width: 110%;
+    }
+
+    @include mqPhone {
+      width: 90%;
+    }
+
+    @include mqLand {
+      width: 110%;
+    }
   }
 }

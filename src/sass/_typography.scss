@@ -1,13 +1,22 @@
 .heading {
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 }
 
 .heading--primary {
   font-size: 6rem;
+  padding-bottom: 0;
+
+  @include mqPhone {
+    font-size: 5rem;
+  }
 }
 
 .heading--secondary {
   font-size: 3rem;
+
+  @include mqPhone {
+    // text-align: center;
+  }
 }
 
 .heading--tertiary {

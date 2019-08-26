@@ -24,12 +24,30 @@
   display: flex;
   align-items: center;
 
+  @include mqPhone {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
   img {
     display: block;
     margin-right: 2rem;
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
+
+    @include mqTablet {
+      width: 20rem;
+    }
+
+    @include mqPhone {
+      width: 10rem;
+      margin-bottom: 1rem;
+    }
+
+    @include mqLand {
+      width: 10rem;
+    }
   }
 
   p {

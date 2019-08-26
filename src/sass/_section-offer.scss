@@ -4,8 +4,10 @@
   &-content {
     @include container;
     display: flex;
-    // justify-content: center;
-    // align-items: center;
+
+    @include mqTablet {
+      flex-direction: column;
+    }
   }
 }
 
@@ -18,6 +20,15 @@
 
   &:nth-child(2) {
     @include bgc--red;
+  }
+
+  @include mqTablet {
+    margin: 0 auto 4rem;
+    width: 60%;
+  }
+
+  @include mqPhone {
+    width: 90%;
   }
 }
 
