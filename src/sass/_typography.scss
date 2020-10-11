@@ -13,10 +13,6 @@
 
 .heading--secondary {
   font-size: 3rem;
-
-  @include mqPhone {
-    // text-align: center;
-  }
 }
 
 .heading--tertiary {
